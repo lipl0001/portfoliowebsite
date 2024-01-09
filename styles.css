@@ -177,6 +177,13 @@ hr {
 
 /* TEMA 3 SLUT */
 
+/* TEMA 5 START */
+.tema5_intro {
+  max-width: 900px;
+}
+
+/* TEMA 5 SLUT
+
 /* FOOTER START */
 footer {
   display: flex;

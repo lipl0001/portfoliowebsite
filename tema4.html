@@ -36,21 +36,43 @@
     <main>
 
         <h1 class="tema2_copy">TEMA 4 - ANIMATION</h1>
+        <p class="tema5_intro">I tema 4 'Animation', fik vi en introduktion til de grundlæggende aspekter af
+            JavaScript. Her
+            fokuserede vi på
+            anvendelsen af CSS-animationer og JavaScript til at udvikle vores eget spil. Denne læring og forståelse for
+            java script er med til at give en bedere indsigt i at kode dynamiske websites i fremtiden.</p>
         <div class="grid_tema2">
 
             <div class="col_tekst_om">
                 <div>
-                    <h3>Her skal der stå noget</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium unde excepturi accusantium
-                        ipsum esse sint deleniti hic dolorem doloribus, architecto expedita delectus facere fuga cumque
-                        ex officia nisi pariatur consequatur! Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                        Consectetur voluptate magnam ipsa
-                        recusandae impedit maxime, praesentium vel ab laborum id quaerat tempore dolor minus blanditiis,
-                        cumque laudantium inventore laboriosam numquam?</p>
+                    <h3>Design af spilelementer</h3>
+                    <p>I forbindelse med designaspektet af tema 4 "Animation" i vores spiludviklingsprojekt, skulle vi
+                        designe vores
+                        egne spilelementer. Processen begyndte med "sketching", en metode som bruges til at udarbejde de
+                        første koncepter af ens
+                        ideer. På grund af jeg desværre brækkede min arm, fik jeg lov til at tegne mine spilelementer
+                        på computeren. Efter
+                        skitsefasen, designede jeg mine spilelementerne i Adobe Illustrator. Som nybegynder i
+                        Illustrator stod jeg over
+                        for udfordringen i at lære programmet at kende og samtidig designe mine elementer. Heldigvis
+                        lærte jeg hurtigt
+                        koncepterne bag
+                        vektorgrafik og svg-filer - et filformat designet til at beskrive vektorbaseret grafik for web.
+                        Jeg lærte også, hvordan
+                        man eksporterer filer fra Illustrator.</p>
 
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consectetur voluptate magnam ipsa
-                        recusandae impedit maxime, praesentium vel ab laborum id quaerat tempore dolor minus blanditiis,
-                        cumque laudantium inventore laboriosam numquam?</p>
+                    <p>Ved designet af mine spilelementer lod jeg mig inspirere af Liza Vertudaches' stil, som tiltalte
+                        mig med sin
+                        minimalistiske og enkle tilgang. Jeg integrerede også vigtige designprincipper i mine
+                        spilkomponenter og karakterdesign.
+                        I designet trak jeg inspiration fra "Bouba" og "Kiki" stilen. Bouba er ofte kendetegnet ved
+                        sin runde form og
+                        associeres generelt med venlige, gode karakterer, mens Kiki er mere trekantet og ofte forbundet
+                        med onde karakterer.
+                        Denne kontrast i former og tilknyttede karaktertræk afspejles tydeligt i mit arbejde. Derudover
+                        implementerede jeg en
+                        smule af det, der kendes som 'baby bias', i designet for at tilføje vis charme og appel til min
+                        hovedkarakter.</p>
                     <p>
                         <a href="http://plambechproduction.dk/kea/04_animation/website/spil.html" class="link_opgave">Se
                             opgaven
@@ -61,6 +83,7 @@
             </div>
             <div class="col_img_om">
                 <img src="img/animation_julespil.webp" alt="spil">
+                <img src="img/animation_spil.webp" alt="spil">
             </div>
 
 
@@ -70,19 +93,38 @@
         <div class="grid_tema2">
             <div class="col_tekst_om">
                 <div>
-                    <h3>Her skal der stå noget</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime eligendi fugiat atque nobis
-                        perspiciatis. Laborum asperiores cupiditate dignissimos praesentium velit natus perferendis
-                        consequatur distinctio! Ut dolorum est ipsum amet harum. Lorem ipsum dolor sit amet consectetur
-                        adipisicing elit. Maxime eligendi fugiat atque nobis
-                        perspiciatis. Laborum asperiores cupiditate dignissimos praesentium velit natus perferendis
-                        consequatur distinctio! Ut dolorum est ipsum amet harum. Lorem ipsum dolor sit amet consectetur
-                        adipisicing elit. Maxime eligendi fugiat atque nobis
-                        perspiciatis. Laborum asperiores cupiditate dignissimos praesentium velit natus perferendis
-                        consequatur distinctio! Ut dolorum est ipsum amet harum. Lorem ipsum dolor sit amet consectetur
-                        adipisicing elit. Maxime eligendi fugiat atque nobis
-                        perspiciatis. Laborum asperiores cupiditate dignissimos praesentium velit natus perferendis
-                        consequatur distinctio! Ut dolorum est ipsum amet harum.</p>
+                    <h3>Java script øvelse</h3>
+                    <p>I denne øvelse er målet med spillet at opnå point ved at klikke på den røde smiley, mens et klik
+                        på den blå smiley
+                        resulterer i tabet af et liv. For at forstå de grundlæggende aspekter af JavaScript, vil jeg
+                        forklare spillets
+                        forskellige dele og funktioner mere detaljeret.
+                    </p>
+                    <p>Spillet starter, når siden indlæses, hvilket automatisk kalder sidenVises-funktionen. Denne
+                        funktion igangsætter spillet
+                        ved at kalde startGame. I startGame-funktionen bliver både spillets score og antallet af liv
+                        nulstillet og derefter vist
+                        på skærmen.
+                        Spillet består af to hovedelementer: en rød smiley (red1) og en blå smiley (blue1). Disse
+                        smileys får tilfældigt
+                        tildelte startpositioner og bevægelsesforsinkelser, som bestemmes af spillets ranNum-funktion,
+                        der genererer tilfældige
+                        tal. Begge smileys er programmeret til at bevæge sig hen over skærmen med en flyvende animation.
+                        Når man klikker på den røde smiley, aktiveres clickRed-funktionen. Denne funktion øger
+                        spillerens score og pauser
+                        smileyens bevægelse midlertidigt, mens en 'forsvind'-animation afspilles. Efter denne animation
+                        genstarter
+                        genstartRed-funktionen smileyens bevægelse, nu med nye tilfældigt valgte positioner og
+                        forsinkelser.
+                    </p>
+                    <p>Klikker spilleren på den blå smiley, aktiveres clickBlue-funktionen. I modsætning til den røde
+                        smiley, medfører denne
+                        handling et tab af et liv. Tabte liv visualiseres som ikoner, der skifter til gråtone. Ligesom
+                        med den røde smiley,
+                        pauser funktionen den blå smileys bevægelse midlertidigt og genstarter den efterfølgende med nye
+                        positioner og
+                        forsinkelser, når dens 'forsvind'-animation er fuldført.
+                    </p>
                     <p>
                         <a href="http://plambechproduction.dk/kea/04_animation/spil_med_liv_ovelser/"
                             class="link_opgave">Se
@@ -97,38 +139,6 @@
             </div>
 
         </div>
-
-        <div class="grid_tema2">
-
-            <div class="col_tekst_om">
-                <div>
-                    <h3>Her skal der stå noget</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium unde excepturi accusantium
-                        ipsum esse sint deleniti hic dolorem doloribus, architecto expedita delectus facere fuga cumque
-                        ex officia nisi pariatur consequatur! Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                        Consectetur voluptate magnam ipsa
-                        recusandae impedit maxime, praesentium vel ab laborum id quaerat tempore dolor minus blanditiis,
-                        cumque laudantium inventore laboriosam numquam?</p>
-
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consectetur voluptate magnam ipsa
-                        recusandae impedit maxime, praesentium vel ab laborum id quaerat tempore dolor minus blanditiis,
-                        cumque laudantium inventore laboriosam numquam?</p>
-                    <p>
-                        <a href="http://plambechproduction.dk/kea/04_animation/coinclicker_sounds/"
-                            class="link_opgave">Se øvelsen
-                            her</a>
-                    </p>
-
-                </div>
-            </div>
-            <div class="col_img_om">
-                <img src="img/lyd.webp" alt="lyd">
-            </div>
-
-
-
-        </div>
-
 
     </main>
     <footer>
